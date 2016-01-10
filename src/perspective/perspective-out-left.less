@@ -1,0 +1,16 @@
+@keyframes perspectiveOutLeft {
+  0% {
+    transform-origin: 0 0;
+    transform: perspective(800px) rotateY(0deg);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: perspective(800px) rotateY(-180deg);
+  }
+}
+
+.perspective-out-left-animation {
+  animation-name: perspectiveOutLeft;
+  backface-visibility: visible;
+}

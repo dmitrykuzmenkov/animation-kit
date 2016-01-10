@@ -106,6 +106,14 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - rotate-out-up-left
  - rotate-out-up-right
  - rotate-out
+ - perspective-in-down
+ - perspective-in-left
+ - perspective-in-right
+ - perspective-in-up
+ - perspective-out-down
+ - perspective-out-left
+ - perspective-out-right
+ - perspective-out-up
  - slide-in-down
  - slide-in-left
  - slide-in-right

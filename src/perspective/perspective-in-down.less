@@ -1,0 +1,16 @@
+@keyframes perspectiveInDown {
+  0% {
+    transform-origin: 0 100%;
+    transform: perspective(800px) rotateX(-180deg);
+  }
+
+  100% {
+    transform-origin: 0 100%;
+    transform: perspective(800px) rotateX(0deg);
+  }
+}
+
+.perspective-in-down-animation {
+  animation-name: perspectiveInDown;
+  backface-visibility: visible;
+}

@@ -1,0 +1,16 @@
+@keyframes perspectiveInLeft {
+  0% {
+    transform-origin: 0 0;
+    transform: perspective(800px) rotateY(-180deg);
+  }
+
+  100% {
+    transform-origin: 0 0;
+    transform: perspective(800px) rotateY(0deg);
+  }
+}
+
+.perspective-in-left-animation {
+  animation-name: perspectiveInLeft;
+  backface-visibility: visible;
+}
