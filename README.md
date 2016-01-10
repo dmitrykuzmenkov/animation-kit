@@ -136,6 +136,14 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - roll-out
  - vanish-in
  - vanish-out
+ - tin-in-down
+ - tin-in-left
+ - tin-in-right
+ - tin-in-up
+ - tin-out-down
+ - tin-out-left
+ - tin-out-right
+ - tin-out-up
  - zoom-in-down
  - zoom-in-left
  - zoom-in-right
