@@ -1,5 +1,5 @@
 #animation-kit
-Animation KIT for you website using CSS
+Animation KIT for you website using CSS  
 
 *Notice.* Animation KIT is optimzed to use with webpack.
 ## Demo
@@ -44,7 +44,7 @@ animation(element)
 Pay attetion you need to require used animated styles too.
 
 ## Animation list
-All animation has dash (-) notation in names. Keyframes for animation has camelNotationName.
+All animation has dash (-) notation in names. Keyframes for animation has camelNotationName.  
 Here is full list of supported CSS animation name that you can use in animate function
 
  - bounce
@@ -123,3 +123,19 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - zoom-out-right
  - zoom-out-up
  - zoom-out
+
+## Methods
+### animate(animation, opts)
+ - **animation** - name of animation to perform
+ - **opts** - object with options
+ - - *keep* - keep element state after animation is done (default: false)
+ - - *infinite* - loop animation infinitly (default: false)
+
+## start(cb)
+ - **cb** - callback that will be called after animation start
+
+## end(cb)
+ - **cb** - callback that will be called after animation finished
+
+## iteration(cb)
+ - **cb** - callback that will be called on animation iteraction

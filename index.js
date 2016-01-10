@@ -11,17 +11,33 @@ var add_event_listener = function (element, type, callback) {
   });
 };
 
+var get_class_list = function (animation, infinite) {
+  var list = [];
+  list.push('animated');
+  if (infinite) {
+    list.push('infinite');
+  }
+  list.push(animation + '-animation');
+  return list;
+};
+
 module.exports = function (element) {
   return {
     animation_class: '',
-    animate: function (animation) {
-      this.animation_class = animation + '-animation';
-      element.classList.add('animated', this.animation_class);
+    animate: function (animation, opts) {
+      opts = opts || {};
+      var class_list = get_class_list(animation, opts.infinite);
+      DOMTokenList.prototype.add.apply(element.classList, class_list);
+
+      if (opts.keep) {
+        return this;
+      }
 
       var _this = this;
       this.end(function (e) {
-        element.classList.remove('animated', _this.animation_class);
+        DOMTokenList.prototype.remove.apply(element.classList, class_list);
       });
+
       return this;
     },
     start: function (cb) {
