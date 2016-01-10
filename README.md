@@ -114,6 +114,14 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - slide-out-left
  - slide-out-right
  - slide-out-up
+ - space-in-down
+ - space-in-left
+ - space-in-right
+ - space-in-up
+ - space-out-down
+ - space-out-left
+ - space-out-right
+ - space-out-up
  - swap
  - twister-in-down
  - twister-in-up
