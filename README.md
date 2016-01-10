@@ -15,7 +15,6 @@ First you must require installed npm package and pass to it animated dom element
 Follow example
 
 ```javascript
-require('animation-kit/src/attention/bounce.less');
 var anim = require('animation-kit');
 var element = document.getElementById('my-dom-element');
 anim(element)
@@ -32,10 +31,85 @@ anim(element)
 ;
 ```
 
-Pay attetion that you have to include needed animation
+Package will automatic require needed single less style for required animation.
 
 ## Animation list
 All animation has dash (-) notation in names. Keyframes for animation has camelNotationName.
-Here is full list of supported CSS animation classes
+Here is full list of supported CSS animation name that you can use in animate function
 
-*Coming soon*
+ - bounce
+ - flash
+ - head-shake
+ - jello
+ - pulse
+ - rubber-band
+ - shake
+ - swing
+ - tada
+ - wobble
+ - bounce-in-down
+ - bounce-in-left
+ - bounce-in-right
+ - bounce-in-up
+ - bounce-in
+ - bounce-out-down
+ - bounce-out-left
+ - bounce-out-right
+ - bounce-out-up-animation
+ - bounce-out
+ - fade-in-down-big
+ - fade-in-down
+ - fade-in-left-big
+ - fade-in-left
+ - fade-in-right-big
+ - fade-in-right
+ - fade-in-up-big
+ - fade-in-up
+ - fade-in
+ - fade-out-down-big
+ - fade-out-down
+ - fade-out-left-big
+ - fade-out-left
+ - fade-out-right-big
+ - fade-out-right
+ - fade-out-up-big
+ - fade-out-up
+ - fade-out
+ - flip-in-x
+ - flip-in-y
+ - flip-out-x
+ - flip-out-y
+ - flip
+ - lightspeed-in
+ - lightspeed-out
+ - rotate-in-down-left
+ - rotate-in-down-right
+ - rotate-in-up-left
+ - rotate-in-up-right
+ - rotate-in
+ - rotate-out-down-left
+ - rotate-out-down-right
+ - rotate-out-up-left
+ - rotate-out-up-right
+ - rotate-out
+ - slide-in-down
+ - slide-in-left
+ - slide-in-right
+ - slide-in-up
+ - slide-out-down
+ - slide-out-left
+ - slide-out-right
+ - slide-out-up
+ - hinge
+ - roll-in
+ - roll-out
+ - zoom-in-down
+ - zoom-in-left
+ - zoom-in-right
+ - zoom-in-up
+ - zoom-in
+ - zoom-out-down
+ - zoom-out-left
+ - zoom-out-right
+ - zoom-out-up
+ - zoom-out
