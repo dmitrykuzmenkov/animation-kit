@@ -130,8 +130,12 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - hinge
  - hole-out
  - magic
+ - puff-in
+ - puff-out
  - roll-in
  - roll-out
+ - vanish-in
+ - vanish-out
  - zoom-in-down
  - zoom-in-left
  - zoom-in-right
