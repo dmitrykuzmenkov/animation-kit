@@ -114,6 +114,7 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - twister-in-down
  - twister-in-up
  - hinge
+ - magic
  - roll-in
  - roll-out
  - zoom-in-down
