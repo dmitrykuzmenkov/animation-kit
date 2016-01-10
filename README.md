@@ -98,12 +98,16 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - lightspeed-out
  - rotate-in-down-left
  - rotate-in-down-right
+ - rotate-out-down
+ - rotate-out-left
+ - rotate-out-right
  - rotate-in-up-left
  - rotate-in-up-right
  - rotate-in
  - rotate-out-down-left
  - rotate-out-down-right
  - rotate-out-up-left
+ - rotate-out-up
  - rotate-out-up-right
  - rotate-out
  - perspective-in-down
