@@ -5,7 +5,7 @@ for folder in src/*; do
   for file in $folder/*; do
     basename="${file##*/}"
     animation="${basename%%.less}"
-    lines+=("\"$animation-animation\": \"./src/$ns/$animation.less\"")
+    lines+=("\"$animation-animation\": \"animation-kit/src/$ns/$animation.less\"")
   done
 done
 
