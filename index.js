@@ -21,6 +21,6 @@ module.exports = function (element) {
   return {
     start: export_function(element, 'AnimationStart', cb),
     end: export_function(element, 'AnimationEnd', cb),
-    interaction: export_function(element, 'AnimationInteraction', cb)
+    iteraction: export_function(element, 'AnimationIteraction', cb)
   };
 };
