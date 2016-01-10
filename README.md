@@ -131,11 +131,11 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - - *keep* - keep element state after animation is done (default: false)
  - - *infinite* - loop animation infinitly (default: false)
 
-## start(cb)
+### start(cb)
  - **cb** - callback that will be called after animation start
 
-## end(cb)
+### end(cb)
  - **cb** - callback that will be called after animation finished
 
-## iteration(cb)
+### iteration(cb)
  - **cb** - callback that will be called on animation iteraction
