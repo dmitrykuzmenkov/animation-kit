@@ -7,7 +7,7 @@
     "animation-kit",
     "effects"
   ],
-  "version": "0.1.1",
+  "version": "0.1.2",
   "browser": "index.js",
   "main": "index.js",
   "scripts": {
@@ -29,6 +29,7 @@
     "autoprefixer": "^6.2.3",
     "autoprefixer-loader": "^3.1.0",
     "css-loader": "^0.23.1",
+    "domd": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^1.7.0",
     "less": "^2.5.3",
