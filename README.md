@@ -110,6 +110,7 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - slide-out-left
  - slide-out-right
  - slide-out-up
+ - swap
  - hinge
  - roll-in
  - roll-out
