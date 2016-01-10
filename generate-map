@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+declare -a lines
+for folder in src/*; do
+  ns="${folder##*/}"
+  for file in $folder/*; do
+    basename="${file##*/}"
+    animation="${basename%%.less}"
+    lines+=("\"$animation-animation\": \"./src/$ns/$animation.less\"")
+  done
+done
+
+IFS=,
+echo "{${lines[*]}}"
