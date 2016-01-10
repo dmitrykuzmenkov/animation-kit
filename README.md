@@ -57,6 +57,8 @@ Here is full list of supported CSS animation name that you can use in animate fu
  - swing
  - tada
  - wobble
+ - boing-in-up
+ - boing-out-down
  - bomb-left-out
  - bomb-right-out
  - bounce-in-down
