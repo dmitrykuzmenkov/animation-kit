@@ -11,34 +11,24 @@ var add_event_listener = function (element, type, callback) {
   });
 };
 
-var get_class_list = function (animation, infinite) {
-  var list = [];
-  list.push('animated');
-  if (infinite) {
-    list.push('infinite');
-  }
-  list.push(animation + '-animation');
-  return list;
-};
-
 module.exports = function (element) {
   return {
-    animation_class: '',
     animate: function (animation, opts) {
       opts = opts || {};
-      var class_list = get_class_list(animation, opts.infinite);
-      class_list.forEach(function (name) {
-        element.classList.add(name);
-      });
+
+      var class_name = animation + '-animation';
+      element.classList.add('animated');
+      if (opts.infinite) {
+        element.classList.add('infinite');
+      }
+      element.classList.add(class_name);
 
       if (opts.keep) {
         return this;
       }
 
       this.end(function (e) {
-        class_list.forEach(function (name) {
-          element.classList.remove(name);
-        });
+        element.classList.remove(class_name);
       });
 
       return this;
