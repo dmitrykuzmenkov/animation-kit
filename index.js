@@ -11,16 +11,29 @@ var add_event_listener = function (element, type, callback) {
   });
 };
 
-var export_function = function (element, animation, cb) {
-  return function (cb) {
-    add_event_listener(element, animation, cb);
-  };
-};
-
 module.exports = function (element) {
   return {
-    start: export_function(element, 'AnimationStart', cb),
-    end: export_function(element, 'AnimationEnd', cb),
-    iteraction: export_function(element, 'AnimationIteraction', cb)
+    animation_class: '',
+    animate: function (animation) {
+      this.animation_class = animation + '-animation';
+      require(this.animation_class);
+      element.classList.add(this.animation_class);
+      return this;
+    },
+    start: function (cb) {
+      add_event_listener(element, 'AnimationStart', cb);
+      return this;
+    },
+    end: function (cb) {
+      add_event_listener(element, 'AnimationEnd', function (e) {
+        element.classList.remove(this.animation_class);
+        cb(e);
+      });
+      return this;
+    },
+    iteraction: function (cb) {
+      add_event_listener(element, 'AnimationIteraction', cb);
+      return this;
+    }
   };
 };
