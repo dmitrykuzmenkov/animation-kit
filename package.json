@@ -1,7 +1,12 @@
 {
   "name": "animation-kit",
   "description": "Animation KIT for you website using CSS",
-  "keywords": ["css", "animation", "animation-kit", "effects"],
+  "keywords": [
+    "css",
+    "animation",
+    "animation-kit",
+    "effects"
+  ],
   "version": "0.1.0",
   "main": "index.js",
   "repository": {
@@ -12,5 +17,11 @@
     "name": "Dmitry Kuzmenkov (http://dmitrykuzmenkov.ru)"
   },
   "homepage": "https://github.com/dmitrykuzmenkov/animation-kit",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.0"
+  }
 }
