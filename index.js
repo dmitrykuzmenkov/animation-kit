@@ -16,8 +16,12 @@ module.exports = function (element) {
     animation_class: '',
     animate: function (animation) {
       this.animation_class = animation + '-animation';
-      require(this.animation_class);
       element.classList.add(this.animation_class);
+
+      var _this = this;
+      this.end(function (e) {
+        element.classList.remove(_this.animation_class);
+      });
       return this;
     },
     start: function (cb) {
@@ -25,10 +29,7 @@ module.exports = function (element) {
       return this;
     },
     end: function (cb) {
-      add_event_listener(element, 'AnimationEnd', function (e) {
-        element.classList.remove(this.animation_class);
-        cb(e);
-      });
+      add_event_listener(element, 'AnimationEnd', cb);
       return this;
     },
     iteraction: function (cb) {

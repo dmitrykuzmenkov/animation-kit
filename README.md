@@ -10,23 +10,12 @@ Use npm to install package
 npm install animation-kit
 ```
 
-## Webpack configuration
-To use package in your project you have to setup alias.
-Here is example config of webpack resolve namespace:
-
-```javascript
-{
-  resolve: {
-    alias: require('animation-kit/map.json')
-  }
-}
-```
-
 ## Usage
 First you must require installed npm package and pass to it animated dom element to catch animations.
 Follow example
 
 ```javascript
+require('animation-kit/src/attention/bounce.less');
 var anim = require('animation-kit');
 var element = document.getElementById('my-dom-element');
 anim(element)
@@ -43,7 +32,7 @@ anim(element)
 ;
 ```
 
-Package will automatic require needed single less style for required animation.
+Pay attetion you need to require used animated styles too.
 
 ## Animation list
 All animation has dash (-) notation in names. Keyframes for animation has camelNotationName.
