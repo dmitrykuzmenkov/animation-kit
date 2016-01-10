@@ -27,15 +27,18 @@ module.exports = function (element) {
     animate: function (animation, opts) {
       opts = opts || {};
       var class_list = get_class_list(animation, opts.infinite);
-      DOMTokenList.prototype.add.apply(element.classList, class_list);
+      class_list.forEach(function (name) {
+        element.classList.add(name);
+      });
 
       if (opts.keep) {
         return this;
       }
 
-      var _this = this;
       this.end(function (e) {
-        DOMTokenList.prototype.remove.apply(element.classList, class_list);
+        class_list.forEach(function (name) {
+          element.classList.remove(name);
+        });
       });
 
       return this;
