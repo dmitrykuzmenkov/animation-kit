@@ -10,6 +10,18 @@ Use npm to install package
 npm install animation-kit
 ```
 
+## Webpack configuration
+To use package in your project you have to setup alias.
+Here is example config of webpack resolve namespace:
+
+```javascript
+{
+  resolve: {
+    alias: require('animation-kit/map.json')
+  }
+}
+```
+
 ## Usage
 First you must require installed npm package and pass to it animated dom element to catch animations.
 Follow example
