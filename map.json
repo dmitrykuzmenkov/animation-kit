@@ -44,7 +44,6 @@
   "flip-animation": "animation-kit/src/flip/flip.less",
   "lightspeed-in-animation": "animation-kit/src/lightspeed/lightspeed-in.less",
   "lightspeed-out-animation": "animation-kit/src/lightspeed/lightspeed-out.less",
-  "*-animation": "animation-kit/src/main.less/*.less",
   "rotate-in-down-left-animation": "animation-kit/src/rotate/rotate-in-down-left.less",
   "rotate-in-down-right-animation": "animation-kit/src/rotate/rotate-in-down-right.less",
   "rotate-in-up-left-animation": "animation-kit/src/rotate/rotate-in-up-left.less",
