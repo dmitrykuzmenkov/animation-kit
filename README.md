@@ -12,14 +12,20 @@ npm install animation-kit
 
 ## Usage
 First you must require installed npm package and pass to it animated dom element to catch animations.
-Follow example
+
+Import needed less styles for your animation
+
+```less
+@import 'node_modules/animation-kit/src/main.less';
+@import 'node_modules/animation-kit/src/attention/bounce.less';
+```
+
+Then select DOM element using query selector for example and manage animation on it following this example:
 
 ```javascript
-require('animation-kit/src/main.less');
-require('animation-kit/src/attention/bounce.less');
-var anim = require('animation-kit');
+var animation = require('animation-kit');
 var element = document.getElementById('my-dom-element');
-anim(element)
+animation(element)
   .animate('bounce')
   .start(function (e) {
     console.log('Animation started');
