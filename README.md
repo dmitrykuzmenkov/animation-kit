@@ -2,6 +2,8 @@
 Animation KIT for you website using CSS
 
 *Notice.* Animation KIT is optimzed to use with webpack.
+## Demo
+You can try animations online here: http://dmitrykuzmenkov.github.io/animation-kit/
 
 ## Installation
 Use npm to install package
