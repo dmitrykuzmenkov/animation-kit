@@ -10,6 +10,6 @@ for folder in src/*; do
     basename=${file##*/}
     echo '    "'${basename%.less}'",'
   done
-  echo '  ], '
+  echo '  ],'
 done
 echo '};'
