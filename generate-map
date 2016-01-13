@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 echo 'module.exports = {'
 for folder in src/*; do
+  if [[ -f "$folder" ]]; then
+    continue;
+  fi
   group=${folder##*/}
   echo '  "'$group'": ['
   for file in $folder/*; do
