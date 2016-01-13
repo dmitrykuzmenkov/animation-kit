@@ -10,15 +10,15 @@ module.exports = {
     "swing",
     "tada",
     "wobble",
-  ], 
+  ],
   "boing": [
     "boing-in-up",
     "boing-out-down",
-  ], 
+  ],
   "bomb": [
     "bomb-out-left",
     "bomb-out-right",
-  ], 
+  ],
   "bounce": [
     "bounce-in-down",
     "bounce-in-left",
@@ -30,7 +30,7 @@ module.exports = {
     "bounce-out-right",
     "bounce-out-up",
     "bounce-out",
-  ], 
+  ],
   "fade": [
     "fade-in-down-big",
     "fade-in-down",
@@ -50,18 +50,18 @@ module.exports = {
     "fade-out-up-big",
     "fade-out-up",
     "fade-out",
-  ], 
+  ],
   "flip": [
     "flip-in-x",
     "flip-in-y",
     "flip-out-x",
     "flip-out-y",
     "flip",
-  ], 
+  ],
   "lightspeed": [
     "lightspeed-in",
     "lightspeed-out",
-  ], 
+  ],
   "perspective": [
     "perspective-in-down",
     "perspective-in-left",
@@ -71,7 +71,7 @@ module.exports = {
     "perspective-out-left",
     "perspective-out-right",
     "perspective-out-up",
-  ], 
+  ],
   "rotate": [
     "rotate-in-down-left",
     "rotate-in-down-right",
@@ -87,7 +87,7 @@ module.exports = {
     "rotate-out-up-right",
     "rotate-out-up",
     "rotate-out",
-  ], 
+  ],
   "slide": [
     "slide-in-down",
     "slide-in-left",
@@ -97,7 +97,7 @@ module.exports = {
     "slide-out-left",
     "slide-out-right",
     "slide-out-up",
-  ], 
+  ],
   "space": [
     "space-in-down",
     "space-in-left",
@@ -107,7 +107,7 @@ module.exports = {
     "space-out-left",
     "space-out-right",
     "space-out-up",
-  ], 
+  ],
   "special": [
     "hinge",
     "hole-out",
@@ -119,11 +119,11 @@ module.exports = {
     "swap",
     "vanish-in",
     "vanish-out",
-  ], 
+  ],
   "swash": [
     "swash-in",
     "swash-out",
-  ], 
+  ],
   "tin": [
     "tin-in-down",
     "tin-in-left",
@@ -133,11 +133,11 @@ module.exports = {
     "tin-out-left",
     "tin-out-right",
     "tin-out-up",
-  ], 
+  ],
   "twister": [
     "twister-in-down",
     "twister-in-up",
-  ], 
+  ],
   "zoom": [
     "zoom-in-down",
     "zoom-in-left",
@@ -149,5 +149,5 @@ module.exports = {
     "zoom-out-right",
     "zoom-out-up",
     "zoom-out",
-  ], 
+  ],
 };
