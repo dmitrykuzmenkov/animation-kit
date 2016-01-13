@@ -3,3 +3,5 @@ webpack.config.js
 index.html
 main.js
 main.less
+generate-map
+component/**
