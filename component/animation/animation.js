@@ -6,6 +6,12 @@ var animation = require('../../index.js');
 var map = require('./animation.map.js');
 var domd = require('domd');
 
+for (var group in map) {
+  for (var i in map[group]) {
+    require('../../src/' + group + '/' + map[group][i] + '.less');
+  }
+}
+
 module.exports = function (root) {
   var emit = domd(root);
 
