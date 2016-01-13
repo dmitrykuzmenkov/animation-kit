@@ -2,6 +2,7 @@ module.exports = {
   "attention": [
     "bounce",
     "flash",
+    "hatch",
     "head-shake",
     "jello",
     "pulse",

@@ -66,6 +66,7 @@ Here is full list of supported CSS animation name that you can use in animate fu
 
  - bounce
  - flash
+ - hatch
  - head-shake
  - jello
  - pulse
