@@ -1,0 +1,8 @@
+<div class="animation-table">
+  <div for="group_list">
+    <h2>{{name}}</h2>
+    <ul>
+      <li for="animation_list"><button class="js-animate" data-animation="{{name}}">{{name}}</button></li>
+    </ul>
+  </div>
+</div>

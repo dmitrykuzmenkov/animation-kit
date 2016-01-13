@@ -1,15 +1,14 @@
 require('./main.less');
-var domd = require('domd');
-var animation = require('./index.js');
 
-document.addEventListener('DOMContentLoaded', function () {
-  var element = document.querySelector('.js-animated-element');
-
-  var emit = domd(document.body);
-
-  emit.on('click', '.js-animate', function (e, t) {
-    var anim = t.getAttribute('data-animation');
-    animation(element).animate(anim);
+document.addEventListener('DOMContentLoaded', function() {
+  var components = document.querySelectorAll('[component]');
+  Array.prototype.forEach.call(components, function (mount_point) {
+    var cn = mount_point.getAttribute('component');
+    try {
+      var cc = require('./component/' + cn + '/' + cn + '.js');
+      new cc(mount_point);
+    } catch (e) {
+      console.warn('Failed to initialize component ' + cn + '. ' + e);
+    }
   });
-
 });

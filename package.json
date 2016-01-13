@@ -32,6 +32,8 @@
     "domd": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^1.7.0",
+    "jext": "^0.3.6",
+    "jext-loader": "^1.0.4",
     "less": "^2.5.3",
     "less-loader": "^2.2.2",
     "less-plugin-clean-css": "^1.5.1",

@@ -19,6 +19,9 @@ var config = {
           'css!autoprefixer?browsers=last 5 version' +
           '!less?config=lessLoaderCustom'
         )
+      }, {
+        test: /\.jext$/,
+        loader: "jext"
       }
     ]
   },
