@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo 'module.exports = {'
+for folder in src/*; do
+  group=${folder##*/}
+  echo '  "'$group'": ['
+  for file in $folder/*; do
+    basename=${file##*/}
+    echo '    "'${basename%.less}'",'
+  done
+  echo '  ], '
+done
+echo '};'
