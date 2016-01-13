@@ -9,7 +9,6 @@ var domd = require('domd');
 module.exports = function (root) {
   var emit = domd(root);
 
-  console.log(presenter(map));
   var t = pool.get('animation', presenter(map));
   root.appendChild(t.dom());
 
