@@ -2,6 +2,6 @@ webpack.config.js
 .editorconfig
 index.html
 main.js
-main.less
+./main.less
 generate-map
 component/**
