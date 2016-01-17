@@ -16,6 +16,7 @@ module.exports = function (element) {
     animate: function (animation, opts) {
       opts = opts || {};
 
+      element.className = element.className.replace(/\b[a-z0-9\-]+\-animation/gi, '').trim();
       var class_name = animation + '-animation';
       element.classList.add('animated');
       if (opts.infinite) {
