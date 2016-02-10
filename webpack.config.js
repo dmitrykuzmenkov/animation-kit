@@ -16,7 +16,7 @@ var config = {
       {
         test: /\.less$/,
         loader: ExtractText.extract(
-          'css!autoprefixer?browsers=last 5 version' +
+          'css!postcss?browsers=last 5 version' +
           '!less?config=lessLoaderCustom'
         )
       }, {

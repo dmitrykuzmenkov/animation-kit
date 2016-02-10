@@ -26,19 +26,19 @@
     "url": "https://github.com/dmitrykuzmenkov/animation-kit/issues"
   },
   "devDependencies": {
-    "autoprefixer": "^6.2.3",
-    "autoprefixer-loader": "^3.1.0",
+    "autoprefixer": "^6.3.1",
     "css-loader": "^0.23.1",
     "domd": "^0.7.1",
     "extract-text-webpack-plugin": "^1.0.1",
     "html-webpack-plugin": "^1.7.0",
-    "jext": "^0.3.6",
+    "jext": "^0.3.7",
     "jext-loader": "^1.0.4",
-    "less": "^2.5.3",
+    "less": "^2.6.0",
     "less-loader": "^2.2.2",
     "less-plugin-clean-css": "^1.5.1",
-    "webpack": "^1.12.10",
-    "webpack-dev-server": "^1.14.0"
+    "postcss-loader": "^0.8.0",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "less": "^2.5.3"
